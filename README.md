@@ -1,2 +1,2 @@
 # admin
-mean appfor admin portal
+mean app for admin portal
