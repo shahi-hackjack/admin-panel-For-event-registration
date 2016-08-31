@@ -1,0 +1,110 @@
+<!--
+Author: DesignMaz
+Author URL: https://www.designmaz.net
+License URL: https://www.designmaz.net/licence/
+-->
+<!DOCTYPE HTML>
+<html ng-app="user">
+<head>
+<title>EVENT USER PORTAL</title>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- Custom Theme files -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<script src="js/jquery.min.js"></script>
+<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+		    <script type="text/javascript">
+			    $(document).ready(function () {
+			        $('#horizontalTab').easyResponsiveTabs({
+			            type: 'default', //Types: default, vertical, accordion           
+			            width: 'auto', //auto or any width like 600px
+			            fit: true   // 100% fit in a container
+			        });
+			    });
+				
+</script>	
+
+
+</head>
+<body>
+	
+	<div class="head">
+		<div class="logo">
+			<div class="logo-top">
+				<h1>Event Ideas Pitcher's POrtal </h1>
+			</div>
+			<div class="logo-bottom">
+				<section class="sky-form">									
+					
+				</section>
+			</div>
+		</div>		
+		<div class="login" ng-controller="userctrl">
+			<div class="sap_tabs">
+				<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+					<ul class="resp-tabs-list">
+						<li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>Register</span></li>
+						
+						<div class="clearfix"></div>
+					</ul>				  	 
+					<div class="resp-tabs-container">
+						<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
+							<div class="login-top">
+								<form>
+									<input type="text" class="email" placeholder="Name" required="" ng-model="user.name"/>
+									<input type="text" class="email" placeholder="Email" required="" ng-model="user.email"/>		
+							   	<input type="text" class="email" placeholder="Phone Number" required="" ng-model="user.phonenumber"/>	
+                              
+
+            
+								</form>
+								<div class="login-bottom login-bottom1">
+									<div class="submit">
+										<input type="submit" ng-click="login()"value="PITCH"/>
+									</div>
+									<ul>
+										<li><p></p></li>
+										<li><a href="#"><span class="fb"></span></a></li>
+										<li><a href="#"><span class="twit"></span></a></li>
+										<li><a href="#"><span class="google"></span></a></li>
+									</ul>
+									<div class="clear"></div>
+								</div>	
+							</div>
+						</div>
+						<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
+						<div class="login-top">
+								
+								<div class="login-bottom">
+									<div class="submit">
+										<input type="submit" value="SIGN UP"/>
+									</div>
+									<ul>
+										<li><p>Or login with</p></li>
+										<li><a href="#"><span class="fb"></span></a></li>
+										<li><a href="#"><span class="twit"></span></a></li>
+										<li><a href="#"><span class="google"></span></a></li>
+									</ul>
+									<div class="clear"></div>
+								</div>	
+							</div>
+							
+						</div>							
+					</div>	
+				</div>
+			</div>	
+		</div>	
+		<div class="clear"></div>
+	</div>	
+	
+	
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js">
+</script>
+
+	<script src="controllers/controller.js">
+</script>
+	
+</body>
+</html>
